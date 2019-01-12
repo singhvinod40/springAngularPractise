@@ -30,6 +30,7 @@ public class AppConfig {
         LocalSessionFactoryBean factoryBean=new LocalSessionFactoryBean();
         Properties props=new Properties();
 
+
         props.put(DRIVER,env.getProperty("mysql.driver"));
         props.put(URL,env.getProperty("mysql.url"));
         props.put(USER,env.getProperty("mysql.user"));
@@ -42,7 +43,7 @@ public class AppConfig {
 
         //SETTING C3P0
         props.put(C3P0_MIN_SIZE,env.getProperty("hibernate.c3p0.min_size"));
-        props.put(C3P0_MAX_SIZE,env.getProperty("hibernate.c3p0.max_size=20"));
+        props.put(C3P0_MAX_SIZE, env.getProperty("hibernate.c3p0.max_size"));
         props.put(C3P0_ACQUIRE_INCREMENT,env.getProperty("hibernate.c3p0.acquire_increment"));
         props.put(C3P0_TIMEOUT,env.getProperty("hibernate.c3p0.timeout"));
         props.put(C3P0_MAX_STATEMENTS,env.getProperty("hibernate.c3p0.max_statement"));
