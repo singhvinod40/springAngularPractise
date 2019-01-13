@@ -7,6 +7,10 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>springPractise Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
+    <properties>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+    </properties>
   <dependencies>
   
   <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
@@ -54,12 +58,12 @@
     <version>5.3.7.Final</version>
 </dependency>
 
-      <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0 -->
-      <!-- <dependency>
+      <!--https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0-->
+      <dependency>
           <groupId>org.hibernate</groupId>
           <artifactId>hibernate-c3p0</artifactId>
           <version>5.2.9.Final</version>
-      </dependency> -->
+      </dependency>
 
       <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 <dependency>
@@ -82,6 +86,15 @@
           <version>3.1.0</version>
           <scope>provided</scope>
       </dependency>
+      <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+
+      <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+          <version>2.9.8</version>
+      </dependency>
+
   </dependencies>
   <build>
     <finalName>springPractise</finalName>

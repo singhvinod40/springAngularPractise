@@ -15,7 +15,7 @@ import java.util.Properties;
 @EnableTransactionManagement
 
 @ComponentScans(value = {
-        @ComponentScan("com.springPractise.model"),
+        @ComponentScan("com.springPractise.dao"),
         @ComponentScan("com.springPractise.service")
 })
 

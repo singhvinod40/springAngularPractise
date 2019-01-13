@@ -1,9 +1,11 @@
 package com.springPractise.service;
 
 import com.springPractise.model.Book;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public interface BookDaoService {
 
     //save book
@@ -17,8 +19,8 @@ public interface BookDaoService {
 
     //update record
 
-    Book update(long id, Book book);
+    void update(long id, Book book);
     //delete a book
 
-    Book delete(long id);
+    void delete(long id);
 }

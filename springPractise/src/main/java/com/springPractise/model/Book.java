@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity(name = "Book")
+@Entity(name = "book")
 public class Book {
 
     @Id
@@ -40,7 +40,11 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" + "id=" + id + ", bookName='" + bookName + '\'' + ", Author='" + Author + '\'' + '}';
+        return "Book{" +
+                "id=" + id +
+                ", bookName='" + bookName + '\'' +
+                ", Author='" + Author + '\'' +
+                '}';
     }
 }
 
